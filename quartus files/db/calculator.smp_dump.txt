@@ -1,0 +1,40 @@
+
+State Machine - |calculator|central_logic:p4|operator
+Name operator.DIV~reg0 operator.MUL~reg0 operator.SUB~reg0 operator.ADD~reg0 operator.UNDEF~reg0 
+operator.UNDEF~reg0 0 0 0 0 0 
+operator.ADD~reg0 0 0 0 1 1 
+operator.SUB~reg0 0 0 1 0 1 
+operator.MUL~reg0 0 1 0 0 1 
+operator.DIV~reg0 1 0 0 0 1 
+
+State Machine - |calculator|central_logic:p4|state
+Name state.DO_RESET state.FINISHED state.INPUT_OP2 state.INPUT_OP1 
+state.INPUT_OP1 0 0 0 0 
+state.INPUT_OP2 0 0 1 1 
+state.FINISHED 0 1 0 1 
+state.DO_RESET 1 0 0 1 
+
+State Machine - |calculator|scancode_decoder:p2|keyevent
+Name keyevent.KEY_NUM~reg0 keyevent.KEY_MUL~reg0 keyevent.KEY_DIV~reg0 keyevent.KEY_SUB~reg0 keyevent.KEY_ADD~reg0 keyevent.KEY_ENTER~reg0 keyevent.KEY_RESET~reg0 keyevent.KEY_OTHER~reg0 
+keyevent.KEY_OTHER~reg0 0 0 0 0 0 0 0 0 
+keyevent.KEY_RESET~reg0 0 0 0 0 0 0 1 1 
+keyevent.KEY_ENTER~reg0 0 0 0 0 0 1 0 1 
+keyevent.KEY_ADD~reg0 0 0 0 0 1 0 0 1 
+keyevent.KEY_SUB~reg0 0 0 0 1 0 0 0 1 
+keyevent.KEY_DIV~reg0 0 0 1 0 0 0 0 1 
+keyevent.KEY_MUL~reg0 0 1 0 0 0 0 0 1 
+keyevent.KEY_NUM~reg0 1 0 0 0 0 0 0 1 
+
+State Machine - |calculator|scancode_decoder:p2|state
+Name state.idle state.break state.new_code state.hold 
+state.hold 0 0 0 0 
+state.new_code 0 0 1 1 
+state.break 0 1 0 1 
+state.idle 1 0 0 1 
+
+State Machine - |calculator|keyboard:p1|state
+Name state.STOP state.PARITY state.DATA state.IDLE 
+state.IDLE 0 0 0 0 
+state.DATA 0 0 1 1 
+state.PARITY 0 1 0 1 
+state.STOP 1 0 0 1 
