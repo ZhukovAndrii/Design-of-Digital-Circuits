@@ -1,0 +1,67 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.all;
+use WORK.globals.all;
+
+entity  keyboard_shift_display  is
+	port (
+		clock: in std_logic;
+		ps2_clk: in std_logic;
+		ps2_data: in std_logic;
+		reset: in std_logic;
+		output1: out std_logic_vector(6 downto 0);
+		output2: out std_logic_vector(6 downto 0);
+		output3: out std_logic_vector(6 downto 0);
+		output4: out std_logic_vector(6 downto 0));
+end  keyboard_shift_display ;
+
+architecture behav of  keyboard_shift_display is
+	signal reset_s: std_logic;
+	signal char_code: std_logic_vector (7 downto 0);
+	signal ready: std_logic;
+	signal keydigit: std_logic_vector (3 downto 0);
+	signal keyevent: key_event_type;
+	signal enable_s: std_logic;
+	signal code: std_logic_vector (15 downto 0);
+	
+begin		
+		reset_s <= not reset;
+		p1: entity work.keyboard(behav)
+			port map (
+				clock => clock,
+				reset => reset_s,
+				ps2_data => ps2_data,
+				ps2_clk => ps2_clk,
+				char_code => char_code,
+				char_ready => ready
+			);
+		p2: entity work.scancode_decoder(behav)
+			port map (
+				clock => clock,
+				char_code => char_code,
+				char_ready => ready,
+				reset => reset_s,
+				keydigit => keydigit,
+				keyevent => keyevent,
+				keytrigger => enable_s
+			);
+		p3: entity work.dec_shift_reg(behav)
+		generic map(WIDTH => 16)
+			port map (
+				clock => clock,
+				reset => reset_s,
+				digit => keydigit,
+				enable => enable_s,
+				max => "0010011100001111",
+				Q => code
+			);
+		p4: entity work.dec16_to_7seg(behav)
+			port map (
+				input => code,
+				output1 => output1,
+				output2 => output2, 
+				output3 => output3, 
+				output4 => output4
+			);
+		
+end architecture behav;

@@ -1,0 +1,38 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use work.all;
+
+entity dec_shift_reg is
+	generic (
+		Width : integer := 16  -- Change this value to set the number of bits in the register
+	);
+	
+	port (
+		clock: in std_logic;
+		reset: in std_logic;
+		trigger: in std_logic;
+		digit : in std_logic_vector(3 downto 0);
+		Q : out std_logic_vector(WIDTH-1 downto 0);
+		max: in std_logic_vector(WIDTH-1 downto 0));
+end dec_shift_reg;
+			
+architecture behav of dec_shift_reg is
+	signal input_s: std_logic_vector(WIDTH-1 downto 0):= Q (WIDTH-5 downto 0) & digit;
+	signal enable_s: std_logic;
+	
+	begin 
+		if (digit > max) then
+			enable_s <= '0';
+		else
+			enable_s <= trigger;
+		end if;
+			
+			
+		U1: entity work.reg(behav)
+			generic map (WIDTH => WIDTH) 
+			port map (clock => clock,
+						 reset => reset,
+						 enable => enable_s,
+						 d => input_s,
+						 q => Q);
+end behav;
