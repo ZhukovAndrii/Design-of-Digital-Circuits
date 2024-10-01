@@ -1,0 +1,69 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'clock'
+Slack : -4.800
+TNS   : -258.197
+
+Type  : Slow Model Setup 'central_logic:p4|state.DO_RESET'
+Slack : -0.609
+TNS   : -1.263
+
+Type  : Slow Model Hold 'central_logic:p4|state.DO_RESET'
+Slack : -3.191
+TNS   : -14.727
+
+Type  : Slow Model Hold 'clock'
+Slack : -1.770
+TNS   : -1.770
+
+Type  : Slow Model Recovery 'clock'
+Slack : 0.979
+TNS   : 0.000
+
+Type  : Slow Model Removal 'clock'
+Slack : -1.442
+TNS   : -26.309
+
+Type  : Slow Model Minimum Pulse Width 'clock'
+Slack : -1.423
+TNS   : -107.148
+
+Type  : Slow Model Minimum Pulse Width 'central_logic:p4|state.DO_RESET'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'clock'
+Slack : -1.624
+TNS   : -70.014
+
+Type  : Fast Model Setup 'central_logic:p4|state.DO_RESET'
+Slack : -0.104
+TNS   : -0.120
+
+Type  : Fast Model Hold 'central_logic:p4|state.DO_RESET'
+Slack : -1.781
+TNS   : -8.227
+
+Type  : Fast Model Hold 'clock'
+Slack : -1.072
+TNS   : -1.072
+
+Type  : Fast Model Recovery 'clock'
+Slack : 0.997
+TNS   : 0.000
+
+Type  : Fast Model Removal 'clock'
+Slack : -1.017
+TNS   : -21.420
+
+Type  : Fast Model Minimum Pulse Width 'clock'
+Slack : -1.519
+TNS   : -108.684
+
+Type  : Fast Model Minimum Pulse Width 'central_logic:p4|state.DO_RESET'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------
