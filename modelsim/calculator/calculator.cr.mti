@@ -1,0 +1,59 @@
+C:/altera/13.0sp1/projects/calculator/keyboard.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.0sp1/projects/calculator/keyboard.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity keyboard
+-- Compiling architecture behav of keyboard
+-- Loading entity oneshot
+
+} {} {}} C:/altera/13.0sp1/projects/calculator/oneshot_tb.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.0sp1/projects/calculator/oneshot_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity oneshot_tb
+-- Compiling architecture behav of oneshot_tb
+-- Loading entity oneshot
+
+} {} {}} C:/altera/13.0sp1/projects/calculator/keyboard_tb.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.0sp1/projects/calculator/keyboard_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity keyboard_tb
+-- Compiling architecture behav of keyboard_tb
+-- Loading entity keyboard
+
+} {} {}} C:/altera/13.0sp1/projects/calculator/reg.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.0sp1/projects/calculator/reg.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg
+-- Compiling architecture behav of reg
+
+} {} {}} C:/altera/13.0sp1/projects/calculator/reg_tb.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.0sp1/projects/calculator/reg_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg_tb
+-- Compiling architecture behav of reg_tb
+-- Loading entity reg
+
+} {} {}} C:/altera/13.0sp1/projects/calculator/globals.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.0sp1/projects/calculator/globals.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Compiling package globals
+
+} {} {}} C:/altera/13.0sp1/projects/calculator/oneshot.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.0sp1/projects/calculator/oneshot.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity oneshot
+-- Compiling architecture behav of oneshot
+
+} {} {}}

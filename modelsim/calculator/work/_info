@@ -1,0 +1,273 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.0sp1
+Pglobals
+Z0 w1625473524
+Z1 dC:\altera\13.0sp1\projects\calculator
+8C:/altera/13.0sp1/projects/calculator/globals.vhd
+FC:/altera/13.0sp1/projects/calculator/globals.vhd
+l0
+L4
+V:l^e@_4<XaMT1XN4_9iXl1
+Z2 OV;C;10.1d;51
+32
+Z3 o-work work -2002 -explicit -O0
+Z4 tExplicit 1
+!s100 ;nKVOLm@Z4JZ]MWVNL1IF1
+!i10b 1
+!s108 1706354967.877000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/13.0sp1/projects/calculator/globals.vhd|
+!s107 C:/altera/13.0sp1/projects/calculator/globals.vhd|
+Ekeyboard
+Z5 w1702382183
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R1
+Z8 8C:/altera/13.0sp1/projects/calculator/keyboard.vhd
+Z9 FC:/altera/13.0sp1/projects/calculator/keyboard.vhd
+l0
+L4
+V1TG_3Z7zBaLMzkm;IZH6B0
+R2
+32
+Z10 !s108 1706354968.238000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/13.0sp1/projects/calculator/keyboard.vhd|
+Z12 !s107 C:/altera/13.0sp1/projects/calculator/keyboard.vhd|
+R3
+R4
+!s100 HJC>P`ZT]fhbj=d0344X[1
+!i10b 1
+Abehav
+Z13 DEx4 work 7 oneshot 0 22 Pz[@l4]OjVmdW3jL;A6<R0
+R6
+R7
+Z14 DEx4 work 8 keyboard 0 22 1TG_3Z7zBaLMzkm;IZH6B0
+l23
+L15
+VS?XX4ikI:=KCT0j`zJ^?V3
+!s100 WzknAkAYXgA[g8PLc[LMn1
+R2
+32
+R10
+R11
+R12
+R3
+R4
+!i10b 1
+Ekeyboard_tb
+Z15 w1702147975
+Z16 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+R6
+R7
+R1
+Z17 8C:/altera/13.0sp1/projects/calculator/keyboard_tb.vhd
+Z18 FC:/altera/13.0sp1/projects/calculator/keyboard_tb.vhd
+l0
+L6
+VZ9MOnb9G[0BjR`4gP_26?1
+!s100 iz>^2_CnbfcPBKQMZe:T72
+R2
+32
+!i10b 1
+Z19 !s108 1706354968.301000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/13.0sp1/projects/calculator/keyboard_tb.vhd|
+Z21 !s107 C:/altera/13.0sp1/projects/calculator/keyboard_tb.vhd|
+R3
+R4
+Abehav
+R14
+R16
+R6
+R7
+Z22 DEx4 work 11 keyboard_tb 0 22 Z9MOnb9G[0BjR`4gP_26?1
+l14
+L9
+Z23 V]3[K7Dl_UMWS4XgGj09z52
+Z24 !s100 lWAd_HhG7S3XdbW7L[g]a3
+R2
+32
+!i10b 1
+R19
+R20
+R21
+R3
+R4
+En_bit_register
+Z25 w1698049631
+R6
+R7
+R1
+Z26 8C:/altera/13.0sp1/projects/calculator/reg.vhd
+Z27 FC:/altera/13.0sp1/projects/calculator/reg.vhd
+l0
+L4
+V2=9aP1aQ2Q4j;YkT80Sdn3
+R2
+32
+Z28 !s108 1698049634.974000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/13.0sp1/projects/calculator/reg.vhd|
+Z30 !s107 C:/altera/13.0sp1/projects/calculator/reg.vhd|
+R3
+R4
+!s100 0Ie:5eic4RMML=6gIkf^12
+!i10b 1
+Abehavioral
+R6
+R7
+DEx4 work 14 n_bit_register 0 22 2=9aP1aQ2Q4j;YkT80Sdn3
+l18
+L16
+VO0hiUThZ=QmIk:[S9ofR@2
+R2
+32
+R28
+R29
+R30
+R3
+R4
+!s100 3?IOL99UGj4o;n?aDW?=o1
+!i10b 1
+Eoneshot
+Z31 w1699475938
+R6
+R7
+R1
+Z32 8C:/altera/13.0sp1/projects/calculator/oneshot.vhd
+Z33 FC:/altera/13.0sp1/projects/calculator/oneshot.vhd
+l0
+L4
+VPz[@l4]OjVmdW3jL;A6<R0
+R2
+32
+Z34 !s108 1706354968.175000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/13.0sp1/projects/calculator/oneshot.vhd|
+Z36 !s107 C:/altera/13.0sp1/projects/calculator/oneshot.vhd|
+R3
+R4
+!s100 ;KHlVF4_2Gg0@3m<VA:YE2
+!i10b 1
+Abehav
+R6
+R7
+R13
+l15
+L13
+VZicbBVS2C7[U8Y_A4zFzo3
+R2
+32
+R34
+R35
+R36
+R3
+R4
+!s100 <Qc[K`kdj[ZSC9Cg5BbDJ2
+!i10b 1
+Eoneshot_tb
+Z37 w1625473524
+R6
+R7
+R1
+Z38 8C:/altera/13.0sp1/projects/calculator/oneshot_tb.vhd
+Z39 FC:/altera/13.0sp1/projects/calculator/oneshot_tb.vhd
+l0
+L5
+VdY0`JieM[8>J9Bo75za1[2
+R2
+32
+Z40 !s108 1706354968.103000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/13.0sp1/projects/calculator/oneshot_tb.vhd|
+Z42 !s107 C:/altera/13.0sp1/projects/calculator/oneshot_tb.vhd|
+R3
+R4
+!s100 giMkT_AF5PX`O<9Z8LTFm3
+!i10b 1
+Abehav
+R13
+R6
+R7
+DEx4 work 10 oneshot_tb 0 22 dY0`JieM[8>J9Bo75za1[2
+l15
+L8
+V@BJN8]OWP=4hEXCh8z3463
+R2
+32
+R40
+R41
+R42
+R3
+R4
+!s100 R=HQ[O]M[cToiRJHcAg8W1
+!i10b 1
+Ereg
+Z43 w1699475488
+R6
+R7
+R1
+R26
+R27
+l0
+L4
+VdNO=G<^WF7bC_7:mCi5[U1
+R2
+32
+Z44 !s108 1706354968.038000
+R29
+R30
+R3
+R4
+!s100 g^RnkhAG?0n^mD9kdChV21
+!i10b 1
+Abehav
+R6
+R7
+Z45 DEx4 work 3 reg 0 22 dNO=G<^WF7bC_7:mCi5[U1
+l18
+L16
+Vd4WbcPU`ZnohkWEPN2@2Y2
+R2
+32
+R44
+R29
+R30
+R3
+R4
+!s100 e;kLbMHLnF0YPWeVg50I>1
+!i10b 1
+Ereg_tb
+R37
+R6
+R7
+R1
+Z46 8C:/altera/13.0sp1/projects/calculator/reg_tb.vhd
+Z47 FC:/altera/13.0sp1/projects/calculator/reg_tb.vhd
+l0
+L5
+VmIR3M2A;?6SW9Q<O@Qh9o0
+R2
+32
+Z48 !s108 1706354967.945000
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/13.0sp1/projects/calculator/reg_tb.vhd|
+Z50 !s107 C:/altera/13.0sp1/projects/calculator/reg_tb.vhd|
+R3
+R4
+!s100 :PA@1cC2_FBglEa>aj>Ya1
+!i10b 1
+Abehav
+R45
+R6
+R7
+DEx4 work 6 reg_tb 0 22 mIR3M2A;?6SW9Q<O@Qh9o0
+l18
+L8
+Vj]>9azo<aPnM@L?XJnEIg3
+R2
+32
+R48
+R49
+R50
+R3
+R4
+!s100 khLbTLO8T]N9DS1jYknQ01
+!i10b 1

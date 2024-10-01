@@ -1,0 +1,40 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity oneshot is
+    Port (
+        clock : in STD_LOGIC; ------------------------------------- System clock (same as at the reg)
+        reset : in STD_LOGIC; ------------------------------------- System reset (same as at the reg)
+        trigger_i : in STD_LOGIC; --------------------------------- Trigger from the board
+        pulse_o : out STD_LOGIC ----------------------------------- One-shot pulse output
+    );
+end entity oneshot;
+
+architecture behav of oneshot is 
+    signal signal_state,  next_state, check_pulse : std_logic := '0';
+begin
+  process (reset, clock)
+  begin
+    if rising_edge(clock) and reset = '0' then
+      signal_state <= next_state; ----------------------------- Change the state on the rising edge
+    end if;
+  end process;
+    
+  process (trigger_i, reset, pulse_o_internal)
+  begin
+    if trigger_i = '1' and reset = '0' and check_pulse = '0' then
+      next_state <= '1'; -------------------------------------- If the pulse is yet 0 - make it 1 on the next clock cycle
+      check_pulse <= '1'; ------------------------------------- We want the pulse to be only active for 1 cycle
+    elsif trigger_i = '0' then
+      check_pulse <= '0'; ------------------------------------- Now the pulse can again be triggered
+    end if;
+    
+    if signal_state = '1' then
+      next_state <= '0'; -------------------------------------- We want the pulse to be only active for 1 cycle
+    end if;
+  end process;
+
+  pulse_o <= signal_state; ------------------------------------ Output the signal
+  
+
+end architecture behav;

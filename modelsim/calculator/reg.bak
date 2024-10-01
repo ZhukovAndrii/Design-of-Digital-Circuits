@@ -1,0 +1,32 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity n_bit_register is
+  generic (
+    N : integer := 8  -- Change this value to set the number of bits in the register
+  );
+  Port ( 
+    clk : in  std_logic;   -- Clock input
+    rst : in  std_logic;   -- Reset input
+    enable : in std_logicl -- Enable input
+    din : in  std_logic_vector(N-1 downto 0); -- Data input
+    dout : out std_logic_vector(N-1 downto 0) -- Data output
+  );
+end n_bit_register;
+
+architecture Behavioral of n_bit_register is
+  signal reg : std_logic_vector(N-1 downto 0) := (others => '0'); -- Register signal
+begin
+  process (clk, rst)
+  begin
+    if rst = '1' then
+      reg <= (others => '0'); -- Reset the register to all zeros
+    elsif rising_edge(clk) then
+        if enable = '1' then
+            reg <= din; -- Load the input data on rising edge of the clock
+        end if;
+    end if;
+  end process;
+
+  dout <= reg; -- Output the data from the register
+end Behavioral;
